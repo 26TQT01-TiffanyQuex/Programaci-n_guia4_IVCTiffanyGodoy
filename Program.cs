@@ -1,0 +1,23 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int nivel, monedas;
+        nivel = 1;
+        Console.WriteLine("------------¡Bienvenido!-------------");
+        Console.WriteLine("Digite el número de monedas que posee");
+        monedas = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Niveles Disponibles:-----------------");
+
+        while (monedas <= 350 && nivel < 5)
+        {
+            nivel++;
+            Console.WriteLine("NIVEL " + nivel);
+        }
+        while (monedas >= 350 && nivel < 5)
+        {
+            nivel++;
+            Console.WriteLine("NIVEL " + nivel);
+        }
+    }
+}
