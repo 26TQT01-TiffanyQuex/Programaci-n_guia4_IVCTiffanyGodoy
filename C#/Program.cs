@@ -1,0 +1,17 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int num,i;
+        Console.WriteLine("Ingrese un entero mayor que 2");
+        num = Convert.ToInt32(Console.ReadLine());
+
+        for (i = 2; i <= num; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine("Números pares entre 2 y " + num + " son: " + i);
+            }
+        }
+    }
+}
