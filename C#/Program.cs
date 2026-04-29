@@ -1,0 +1,26 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int num, divisores = 0, inicio = 1;
+        Console.WriteLine("Ingrese un número entero");
+        num = Convert.ToInt32(Console.ReadLine());
+
+        while (inicio <= num)
+        {
+            if (num % inicio == 0)
+            {
+                divisores = divisores + 1;
+            }
+            inicio++;
+        }
+        if (divisores == 2)
+        {
+            Console.WriteLine(num + " Es primo");
+        }
+        else
+        {
+            Console.WriteLine(num + " No es primo");
+        }
+    }
+}
