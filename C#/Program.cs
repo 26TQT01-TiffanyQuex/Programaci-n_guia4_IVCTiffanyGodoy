@@ -1,0 +1,13 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int num=4, i=1, result;
+        result = num * i;
+        for (num = 4; i <= 20; i++)
+        {
+            result = num * i;
+            Console.WriteLine(num+" x "+i+"="+result);
+        }
+    }
+}
