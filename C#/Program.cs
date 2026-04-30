@@ -1,0 +1,36 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int CajonesOcupados = 0, capacidadTotal = 200, opcion;
+
+        do
+        {
+            Console.WriteLine("---------------------SISTEMA DE ACCESO------------------------");
+            Console.WriteLine("Cajones ocupados: " + CajonesOcupados + " / " + capacidadTotal);
+            Console.WriteLine("escriba [1] para ingresar un auto o [0] para salir del sistema");
+            opcion = Convert.ToInt32(Console.ReadLine());
+
+            if (opcion == 1)
+            {
+                CajonesOcupados = CajonesOcupados + 1;
+                Console.WriteLine("Ticket impreso. ¡Bienvenido!");
+            }
+            else
+            {
+                if (opcion != 0)
+                {
+                    Console.WriteLine("Opción no válida");
+                }
+            }         
+            
+        }
+        while (CajonesOcupados <= 200 );
+
+        if (CajonesOcupados >= 200)
+        {
+            Console.WriteLine("AVISO: estacionamiento lleno");
+            Console.WriteLine("No se permiten más ingresos");
+        }
+    }
+}
