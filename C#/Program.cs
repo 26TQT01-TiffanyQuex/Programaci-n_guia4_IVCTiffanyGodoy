@@ -1,0 +1,19 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int i=1, imp;
+        Console.WriteLine("Los numeros impares comprendidos entre el 1 y el 100 son: ");
+        imp = i % 2;
+
+        do
+        { 
+            if (i%2 == 0)
+            {
+                Console.WriteLine(imp);
+            }
+            imp = i;
+            i++;
+        } while (imp <= 100);       
+    }  
+}
