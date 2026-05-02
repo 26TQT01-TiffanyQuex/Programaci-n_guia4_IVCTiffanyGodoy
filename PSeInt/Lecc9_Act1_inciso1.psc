@@ -16,6 +16,6 @@ Algoritmo Lecc9_Act1_Inc1
 	Fin Mientras
 	
 	
-	Escribir "Ya se alcanzó o superó 1 kilo de manzana"
-	Escribir "Compré ",numeroManzanas, " Manzanas"
+	Escribir "Ya se alcanzÃ³ o superÃ³ 1 kilo de manzana"
+	Escribir "ComprÃ© ",numeroManzanas, " Manzanas"
 FinAlgoritmo
