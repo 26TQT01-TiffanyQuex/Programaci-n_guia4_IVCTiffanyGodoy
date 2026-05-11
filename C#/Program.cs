@@ -1,0 +1,33 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int vendidos = 0, boletos, dinero = 0;
+        do
+        {
+            Console.WriteLine("¿Boleto vendido?: 1.-adulto. 2.-niño. 3.-salir");
+            boletos = Convert.ToInt32(Console.ReadLine());
+
+            if (boletos == 1)
+            {
+                vendidos = vendidos + 1;
+                dinero = dinero + 15;
+
+            }
+            if (boletos == 2)
+            {
+                vendidos = vendidos + 1;
+                dinero = dinero + 10;
+            }
+            else if (boletos ==3)
+            {
+                Console.WriteLine("Cerrando programa...");
+            }
+
+            Console.WriteLine("Total boletos vendidos: " + vendidos);
+            Console.WriteLine("Dinero total cobrado: " + dinero);
+        }
+        while (boletos != 3);
+        
+    }
+}
