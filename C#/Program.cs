@@ -1,0 +1,38 @@
+﻿using System.Security.Cryptography;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int denominación, cien;
+        double totalcien;
+        cien = 0;
+        totalcien = 0;
+        Random rnd = new Random();
+
+        for (int i = 1; i < 1000; i++)
+        {
+            denominación = rnd.Next(1,4); 
+
+            switch (denominación)
+            {
+                case 1:
+                    denominación = 20;
+                    break;
+                case 2:
+                    denominación = 50;
+                    break;
+                case 3:
+                    denominación = 100;
+                    break;
+            }
+            if (denominación == 100)
+            {
+                cien++;
+                totalcien += 100;
+            }
+        }
+        Console.WriteLine("Total de billetes de $100: "+ cien);
+        Console.WriteLine("Total de dinero en billetes de $100: "+totalcien);
+    }
+}
