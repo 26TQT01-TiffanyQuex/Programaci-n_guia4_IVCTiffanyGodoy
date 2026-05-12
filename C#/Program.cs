@@ -1,0 +1,18 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int multi, suma=0, totalpar=0;
+        for (int i = 1; i < 20; i++)
+        {
+            multi = i*7;
+            suma = suma + multi;
+            if (multi % 2 == 0)
+            {
+                totalpar ++;
+            }
+        }
+        Console.WriteLine("La suma de los primeros 20 múltiplos de 7 es: " + suma);
+        Console.WriteLine("Cantidad de múltiplos de 7 que son pares: " + totalpar);
+    }
+}
