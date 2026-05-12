@@ -1,0 +1,39 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int contadorPrimo=0, sumaPar=0, contadorDiv;
+        bool esPrimo;
+
+        for (int i = 300; i >= 1; i--)
+        {
+            if (i % 2 == 0)
+            {
+                sumaPar+=i;
+            }
+            if (i >=2)
+            {
+                esPrimo = true;
+                contadorDiv = 0;
+
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        contadorDiv = contadorDiv + 1;
+                    }
+                }
+                if (contadorDiv !=2)
+                {
+                    esPrimo = false;
+                }
+                if (esPrimo == true)
+                {
+                    contadorPrimo = contadorPrimo + 1;
+                }
+            }
+        }
+        Console.WriteLine("Cantidad de números primos entre 300 y 1: " + contadorPrimo);
+        Console.WriteLine("Suma de números pares entre 300 y 1: "+ sumaPar);
+    }
+}
