@@ -1,0 +1,24 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int contadorDiv, i, j, suma=0;
+
+        for (i = 1; i <= 50; i++)
+        {
+            contadorDiv = 0;
+            for (j = 1; j <= i; j++)
+            {
+                if (i % j == 0)
+                {
+                    contadorDiv += 1;
+                }
+            }    
+            if (contadorDiv == 2)
+            {
+                suma += i;
+            }
+        }
+        Console.WriteLine("La suma de los números primos entre 1 y 50 es: "+suma);
+    }
+}
